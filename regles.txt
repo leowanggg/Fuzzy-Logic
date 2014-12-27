@@ -1,0 +1,384 @@
+Regle R1
+  Si        resultat_biolo  TB
+    et      resultat_chimie B
+    et      resultat_math   B
+  Alors     niveau_biolo    TB
+  Certitude 1.0 
+
+Regle R2
+  Si        resultat_chimie   TB
+    et      resultat_physique B
+    et      resultat_math     B
+  Alors     niveau_chimie     TB
+  Certitude 1.0 
+
+Regle R3
+  Si        resultat_physique TB
+    et      resultat_math     B
+  Alors     niveau_physique   TB
+  Certitude 1.0 
+
+Regle R4
+  Si        resultat_info     TB
+    et      resultat_math     B
+    et      resultat_physique B
+  Alors     niveau_info       TB
+  Certitude 1.0 
+
+Regle R5
+  Si        resultat_math       B
+    et      resultat_physique   B
+  Alors     niveau_electronique B
+  Certitude 1.0 
+
+Regle R6
+  Si        resultat_math     TB
+    et      resultat_info     B
+    et      resultat_physique B
+  Alors     niveau_math       TB
+  Certitude 1.0 
+
+Regle R7
+  Si        resultat_math     TB
+    et      resultat_chimie   TB
+    et      resultat_biolo    TB
+    et      resultat_physique B
+  Alors     niveau_medecine   TB
+  Certitude 1.0 
+
+Regle R8
+  Si        resultat_latin    TB
+    et      resultat_francais TB
+    et	    resultat_anglais  B
+    et	    resultat_allemand B
+    et	    resultat_espagnol B
+  Alors     niveau_lettres    TB
+  Certitude 1.0 
+
+Regle R9
+  Si        resultat_eco      TB
+    et	    resultat_hist_geo TB
+    et	    resultat_philo    B
+    et	    resultat_francais B
+    et	    resultat_math     AB
+  Alors     niveau_social     TB
+  Certitude 1.0 
+
+Regle R10
+  Si        resultat_eco      TB
+    et	    resultat_anglais  B
+    et	    resultat_francais B
+    et	    resultat_math     AB
+  Alors     niveau_commerce   TB
+  Certitude 1.0 
+
+Regle R11
+  Si        resultat_hist_geo TB
+    et	    resultat_francais B
+    et	    resultat_eco      B
+    et	    resultat_philo    AB
+  Alors     niveau_histoire   TB
+  Certitude 1.0 
+
+Regle R12
+  Si        niveau_histoire B
+  Alors     choix_hist_geo *
+  Certitude 1.0 
+
+Regle R13
+  Si        interet_histoire B
+  Alors     choix_hist_geo *
+  Certitude 0.6 
+
+Regle R14
+  Si        convenance_histoire B
+  Alors     choix_hist_geo *
+  Certitude 0.4 
+
+Regle R15
+  Si        niveau_physique B
+  Alors     choix_physique *
+  Certitude 0.9 
+
+Regle R16
+  Si        interet_physique B
+  Alors     choix_physique *
+  Certitude 0.6 
+
+Regle R17
+  Si        convenance_physique B
+  Alors     choix_physique *
+  Certitude 0.4 
+
+Regle R18
+  Si        aime_recherche   B
+  Alors     interet_physique B
+  Certitude 0.8 
+
+Regle R19
+  Si        aime_lirescience B
+  Alors     interet_physique B
+  Certitude 0.9 
+
+Regle R20
+  Si        niveau_math B
+  Alors     choix_math *
+  Certitude 0.9 
+
+Regle R21
+  Si        interet_math B
+  Alors     choix_math *
+  Certitude 0.6 
+
+Regle R22
+  Si        convenance_math B
+  Alors     choix_math *
+  Certitude 0.4 
+
+Regle R23
+  Si        aime_manipsymbol B
+  Alors     interet_math     B
+  Certitude 0.85 
+
+Regle R24
+  Si        aime_casse_tete B
+  Alors     interet_math    B
+  Certitude 0.75 
+
+Regle R25
+  Si        niveau_info B
+  Alors     choix_info *
+  Certitude 0.9 
+
+Regle R26
+  Si        interet_info B
+  Alors     choix_info *
+  Certitude 0.6 
+
+Regle R27
+  Si        convenance_info B
+  Alors     choix_info *
+  Certitude 0.4 
+
+Regle R28
+  Si        aime_ordinateurs B
+  Alors     interet_info     B
+  Certitude 0.9 
+
+Regle R29
+  Si        aime_ecrire_prog AB
+  Alors     interet_info     B
+  Certitude 0.9 
+
+Regle R30
+  Si        niveau_biolo B
+  Alors     choix_biolo *
+  Certitude 0.9 
+
+Regle R31
+  Si        interet_biolo B
+  Alors     choix_biolo *
+  Certitude 0.6 
+
+Regle R32
+  Si        convenance_biolo B
+  Alors     choix_biolo *
+  Certitude 0.4 
+
+Regle R33
+  Si        aime_nature   B
+  Alors     interet_biolo B
+  Certitude 0.75 
+
+Regle R34
+  Si        niveau_chimie B
+  Alors     choix_chimie *
+  Certitude 0.9 
+
+Regle R35
+  Si        interet_chimie B
+  Alors     choix_chimie *
+  Certitude 0.6 
+
+Regle R36
+  Si        convenance_chimie B
+  Alors     choix_chimie *
+  Certitude 0.4 
+
+Regle R37
+  Si        aime_experience_chimie B
+  Alors     interet_chimie         B
+  Certitude 0.8 
+
+Regle R38
+  Si        niveau_electronique B
+  Alors     choix_electronique *
+  Certitude 0.9 
+
+Regle R39
+  Si        interet_electronique B
+  Alors     choix_electronique *
+  Certitude 0.6 
+
+Regle R40
+  Si        convenance_electronique B
+  Alors     choix_electronique *
+  Certitude 0.4 
+
+Regle R41
+  Si        aime_bricoler        B
+  Alors     interet_electronique AB
+  Certitude 0.8 
+
+Regle R42
+  Si        niveau_lettres B
+  Alors     choix_lettres *
+  Certitude 0.9 
+
+Regle R43
+  Si        interet_lettres B
+  Alors     choix_lettres *
+  Certitude 0.6 
+
+Regle R44
+  Si        convenance_lettres B
+  Alors     choix_lettres *
+  Certitude 0.4 
+
+Regle R45
+  Si        aime_lire       B
+  Alors     interet_lettres AB
+  Certitude 0.9 
+
+Regle R46
+  Si        aime_mots_croises B
+  Alors     interet_lettres   AB
+  Certitude 0.5 
+
+Regle R47
+  Si        niveau_commerce B
+  Alors     choix_commerce *
+  Certitude 0.9 
+
+Regle R48
+  Si        interet_commerce B
+  Alors     choix_commerce *
+  Certitude 0.6 
+
+Regle R49
+  Si        convenance_commerce B
+  Alors     choix_commerce *
+  Certitude 0.4 
+
+Regle R50
+  Si        aime_milieu_commerce B
+  Alors     interet_commerce     B
+  Certitude 0.9 
+
+Regle R51
+  Si        niveau_medecine B
+  Alors     choix_medecine *
+  Certitude 0.9 
+
+Regle R52
+  Si        interet_medecine B
+  Alors     choix_medecine *
+  Certitude 0.6 
+
+Regle R53
+  Si        convenance_medecine B
+  Alors     choix_medecine *
+  Certitude 0.4 
+
+Regle R54
+  Si        aime_etudier_corps B
+  Alors     interet_medecine   B
+  Certitude 0.9 
+
+Regle R55
+  Si        niveau_social B
+  Alors     choix_social *
+  Certitude 0.9 
+
+Regle R56
+  Si        interet_social B
+  Alors     choix_social *
+  Certitude 0.6 
+
+Regle R57
+  Si        convenance_social B
+  Alors     choix_social *
+  Certitude 0.4 
+
+Regle R58
+  Si        aime_etudier_comportement B
+  Alors     interet_social            B
+  Certitude 0.85 
+
+Regle R59
+  Si        aime_histoire    B
+  Alors     interet_histoire B
+  Certitude 1.0 
+
+Regle R60
+  Si        preferer_prof     B
+  Alors     convenance_chimie B
+  Certitude 1.0 
+
+Regle R61
+  Si        preferer_prof    B
+  Alors     convenance_biolo B
+  Certitude 1.0 
+
+Regle R62
+  Si        preferer_prof       B
+  Alors     convenance_physique B
+  Certitude 1.0 
+
+Regle R63
+  Si        preferer_prof   B
+  Alors     convenance_math B
+  Certitude 1.0 
+
+Regle R64
+  Si        preferer_prof      B
+  Alors     convenance_lettres B
+  Certitude 1.0 
+
+Regle R65
+  Si        preferer_prof     B
+  Alors     convenance_social B
+  Certitude 1.0 
+
+Regle R66
+  Si        preferer_prof       B
+  Alors     convenance_histoire B
+  Certitude 1.0 
+
+Regle R67
+  Si        preferer_programmeur B
+  Alors     convenance_info      B
+  Certitude 1.0 
+
+Regle R68
+  Si        preferer_electronicien  B
+  Alors     convenance_electronique B
+  Certitude 1.0 
+
+Regle R69
+  Si        preferer_docteur    B
+  Alors     convenance_medecine B
+  Certitude 1.0 
+
+Regle R70
+  Si        personnalite_aime_risque B
+  Alors     convenance_commerce      B
+  Certitude 0.6 
+
+
+
+
+
+
+
+

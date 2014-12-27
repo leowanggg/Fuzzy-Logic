@@ -1,0 +1,36 @@
+resultat_math             F    1.0 
+resultat_biolo            B    1.0 
+resultat_chimie           B    1.0 
+resultat_physique         TB   1.0 
+resultat_info             AB   1.0 
+resultat_francais         TB   1.0 
+resultat_philo            B    1.0 
+resultat_eco              AB   1.0 
+resultat_hist_geo         B    1.0 
+resultat_latin            TB   1.0 
+resultat_anglais          B    1.0 
+resultat_allemand         AB   1.0 
+resultat_espagnol         AB   1.0 
+aime_recherche            TB   1.0 
+aime_lirescience          TB   1.0 
+aime_ordinateurs          B    1.0 
+aime_ecrire_prog          TB   1.0 
+aime_nature               TB   1.0 
+aime_experience_chimie    AB   1.0 
+aime_bricoler             TB   1.0 
+aime_manipsymbol          B    1.0 
+aime_casse_tete           AB   1.0 
+aime_lire                 TB   1.0 
+aime_milieu_commerce      AB   1.0 
+aime_etudier_corps        TB   1.0 
+aime_etudier_comportement TB   1.0 
+aime_mots_croises         TB   1.0 
+aime_histoire             B    1.0 
+preferer_prof             TB   1.0 
+preferer_programmeur      AB   1.0 
+preferer_electronicien    AB   1.0 
+preferer_docteur          TB   1.0 
+personnalite_aime_risque  AB   1.0
+
+
+

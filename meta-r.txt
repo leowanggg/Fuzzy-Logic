@@ -1,0 +1,58 @@
+Regle MR1
+  Si    resultat_math    AF
+    ou  aime_manipsymbol F
+  Evite choix_math 
+
+Regle MR2
+  Si    resultat_physique AF
+    ou  resultat_math     F
+    ou  aime_manipsymbol  F
+  Evite choix_physique 
+
+Regle MR3
+  Si    resultat_biolo AF
+    ou  aime_nature    F
+  Evite choix_biolo 
+
+Regle MR4
+  Si    resultat_chimie        AF
+    ou  aime_experience_chimie AF
+  Evite choix_chimie 
+
+Regle MR5
+  Si    resultat_physique F
+    ou  resultat_math     F
+    ou  aime_bricoler     F
+  Evite choix_electronique 
+
+Regle MR6
+  Si    aime_ordinateurs F
+    ou  aime_ecrire_prog F
+    ou  resultat_info    AF
+  Evite choix_info 
+
+Regle MR7
+  Si    resultat_francais AF
+    ou  aime_lire         F
+  Evite choix_lettres 
+
+Regle MR8
+  Si    resultat_eco         F
+    ou  aime_milieu_commerce F
+  Evite choix_commerce 
+
+Regle MR9
+  Si    resultat_math      F
+    ou  resultat_biolo     F
+    ou  aime_etudier_corps F
+  Evite choix_medecine 
+
+Regle MR10
+  Si    aime_etudier_comportement F
+    ou  resultat_francais         TF
+  Evite choix_social 
+
+Regle MR11
+  Si    resultat_hist_geo F
+    ou  resultat_francais TF
+  Evite choix_hist_geo 
